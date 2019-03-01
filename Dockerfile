@@ -28,3 +28,6 @@ RUN chmod +x /usr/local/bin/*.r
 # Add testing to container
 ADD runTest1.sh /usr/local/bin/runTest1.sh
 
+# Bind directories for UFRC running
+RUN mkdir /ufrc /orange /bio /rlts 
+RUN mkdir -p /scratch/local
